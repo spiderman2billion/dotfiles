@@ -4,6 +4,10 @@
 # Installs Homebrew software.
 
 brew analytics off
+## make sure everything already install is epgraded
+brew update
+brew upgrade
+brew cleanup
 
 brew tap homebrew/bundle
 
@@ -31,6 +35,7 @@ brew install exiftool
 brew install elasticsearch
 brew install elm
 brew install fasd
+brew install fortune
 brew install ffmpeg
 brew install flac
 brew install fzf

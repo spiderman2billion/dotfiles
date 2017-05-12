@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#
+# bootstrap the basics
+
+# check for homebrew
+# install git
+# install xcode
+# git dotfile repository
+# install oh-my-zsh
+# install zsh
+# add to .profile
+
+# install homebrew
+echo -n "checking for homebrew"
+if ! command -v brew > /dev/null; then
+    echo " - installing"
+    ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    export PATH="/usr/local/bin:$PATH"
+else
+echo " - installed"
+fi
+
+
+#install git
+echo "installing git"
+brew install git
+
+#git dotfiles
+echo "installing dotfiles"
+git clone https://github.com/spiderman2billion/dotfiles.git
+
+#install git
+echo "installing oh-my-zsh"
+unset ZSH
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+#install zsh
+brew install zsh
+
+#setup .profile to point to zsh
+rm -f ~/.profile
+echo "export SHELL=/usr/local/bin/zsh" > ~/.profile
+echo "[ -z "$ZSH_VERSION" ] && exec /usr/local/bin/zsh -l" >> ~/.profile
+
+
+
