@@ -1,0 +1,91 @@
+#! /usr/bin/env bash
+
+# DESCRIPTION
+# Installs Homebrew software.
+
+brew analytics off
+
+brew tap homebrew/bundle
+
+brew install ack
+brew install coreutils
+brew install wget
+brew install youtube-dl
+brew install readline
+brew install openssl
+
+# OpenSSL OSX CA
+brew tap raggi/ale
+brew install openssl-osx-ca
+
+brew install asciinema
+brew install bash
+brew install bash-completion
+brew install chruby
+brew install cloc
+brew install ccat
+brew install ctags
+brew install diff-so-fancy
+brew install direnv
+brew install exiftool
+brew install elasticsearch
+brew install elm
+brew install fasd
+brew install ffmpeg
+brew install flac
+brew install fzf
+brew install gdbm
+brew install gifsicle
+brew install git
+brew install gpg
+brew install gpg-agent
+brew install graphviz
+brew install hr
+brew install htop
+brew install httpie
+brew install imagemagick
+brew install ioping
+brew install jq
+brew install libffi
+brew install libyaml
+brew install lnav
+brew install lynis
+brew install mas
+brew install memcached
+brew install hg
+brew install mobile-shell
+brew install namebench
+brew install ngrep
+brew install nginx
+brew install node
+brew install parallel
+brew install peco
+brew install pgcli
+brew install phantomjs
+brew install pigz
+brew install pv
+brew install postgresql
+brew install python3
+pip2 install virtualenv
+pip3 install virtualenv
+brew install ranger
+brew install redis
+brew install ruby-install
+brew install shellcheck
+brew install tag
+brew install terminal-notifier
+brew install the_silver_searcher
+brew install tig
+brew install tmux
+brew install reattach-to-user-namespace
+brew install tree
+brew install vim
+brew install watchman
+brew install wry
+brew install yank
+brew install zsh-syntax-highlighting
+brew install zsh-history-substring-search
+brew install zsh-autosuggestions
+brew install zsh-completions
+brew install zsh-lovers
+brew install zshdb

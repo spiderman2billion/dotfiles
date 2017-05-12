@@ -1,0 +1,53 @@
+# shortcut to this dotfiles path is $ZSH
+export ZSH_HOME=$HOME/.dotfiles
+
+# load all the oh-my-zsh stuff
+DISABLE_UPDATE_PROMPT="false"
+DISABLE_AUTO_UPDATE="true"
+COMPLETION_WAITING_DOTS="true"
+HIST_STAMPES="yyyy-mm-dd"
+ZSH_THEME="shawn"
+CASE_SENSITIVE="true"
+
+plugins=(git zsh-syntax-highlighting autocomplete brewi fortune chucknorris common-aliases compleati cpanm fasd osx perl python)
+export ZSH=/Users/stones/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+
+
+# Stash your environment variables in ~/.localrc. This means they'll stay out
+# of your main dotfiles repository (which may be public, like this one), but
+# you'll have access to them in your scripts.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
+# all of our zsh files
+typeset -U config_files
+tmp_config_files=($ZSH_HOME/**/*.zsh)
+config_files=(${tmp_config_files:#*prezto*})
+
+# load the path files
+for file in ${(M)config_files:#*/path.zsh}
+do
+  source $file
+done
+
+# load everything but the path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
+
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+
+# load every completion after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}
+do
+  source $file
+done
+
+unset config_files
+

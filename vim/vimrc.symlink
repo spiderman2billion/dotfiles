@@ -1,0 +1,8 @@
+syntax on
+
+" Wrap gitcommit file types at the appropriate length
+filetype indent plugin on
+
+setlocal shiftwidth=2
+setlocal tabstop=2
+setlocal expandtab
