@@ -10,7 +10,7 @@ ZSH_THEME="shawn"
 CASE_SENSITIVE="true"
 
 plugins=(git zsh-syntax-highlighting autocomplete brewi fortune chucknorris common-aliases compleati cpanm fasd osx perl python)
-export ZSH=/Users/stones/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 

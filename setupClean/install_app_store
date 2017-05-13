@@ -11,7 +11,6 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-
 # Airmail
 mas install 918858936
 # Deliveries
@@ -42,7 +41,7 @@ mas install 409203825
 mas install 844554641
 
 # Pages
-mas install 409201541
+#mas install 409201541
 
 
 # WiFi Explorer

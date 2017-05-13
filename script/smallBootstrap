@@ -25,6 +25,7 @@ fi
 echo "installing git"
 brew install git
 
+echo "installing xcode"
 #install xcode command line
 osx_vers=$(sw_vers -productVersion | awk -F "." '{print $2}')
 cmd_line_tools_temp_file="/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
@@ -53,6 +54,7 @@ fi
 #git dotfiles
 echo "installing dotfiles"
 git clone https://github.com/spiderman2billion/dotfiles.git
+mv dotfiles ~/.dotfiles
 
 #install git
 echo "installing oh-my-zsh"

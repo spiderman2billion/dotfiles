@@ -87,7 +87,7 @@ build_prompt() {
 setopt prompt_subst
 
 PROMPT='%B%F{green}${vcs_info_msg_0_}%B%F{magenta}%{$reset_color%}%$(build_prompt)> '
-RPROMPT='$(prompt_online) $(battery_charge) $(prompt_status)'
+#RPROMPT='$(prompt_online) $(battery_charge) $(prompt_status)'
 
 autoload -U add-zsh-hook
 add-zsh-hook precmd  theme_precmd

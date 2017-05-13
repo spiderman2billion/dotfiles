@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-curl -LO http://xrl.us/perlbrew
-chmod +x perlbrew
-PERLBREW_ROOT=$HOME/src/perl5 ./perlbrew install
+mkdir $HOME/src
+curl -L https://install.perlbrew.pl | bash
 source $HOME/src/perl5/perlbrew/etc/bashrc
-export PATH=$PATH:$PERLBREW_ROOT/bin
 perlbrew init
 perlbrew install-patchperl
 perlbrew install-cpanm
