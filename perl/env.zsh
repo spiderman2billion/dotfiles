@@ -1,2 +1,2 @@
 export PERLBREW_ROOT=$HOME/src/perl5
-export PATH=$PATH:$PERLBREW_ROOT/bin
+#export PATH=$PERLBREW_ROOT/bin:$PATH
