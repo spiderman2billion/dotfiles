@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
 
-mkdir $HOME/src
-curl -L https://install.perlbrew.pl | bash
-source $HOME/src/perl5/perlbrew/etc/bashrc
-perlbrew init
-perlbrew install-patchperl
-perlbrew install-cpanm
-perlbrew install stable
+rootdir=$HOME/src/perl5/perlbrew
+if ! [ -d "$HOME/src" ] ; then
+  mkdir $HOME/src ;
+fi
+if ! [ -d "$rootdir" ] ; then
+  curl -L https://install.perlbrew.pl | bash
+  source $HOME/src/perl5/perlbrew/etc/bashrc
+  perlbrew init
+  perlbrew install-patchperl
+  perlbrew install-cpanm
+  perlbrew install stable
+fi
 
 cpanm App::cpanoutdated
 cpanm YAML
@@ -14,12 +19,12 @@ cpanm local::lib
 cpanm LWP::UserAgent
 cpanm LWP::Simple
 cpanm HTTP::Request::Common
-cpanm HTTP::FormatText
+#cpanm HTTP::FormatText
 cpanm WWW::Mechanize
 cpanm WWW::Twilio::API
 cpanm Email::Send
 cpanm Email::Send::Gmail
-cpanm Email::Send::Creator
+#cpanm Email::Send::Creator
 cpanm Switch
 cpanm DateTime::Format::Strptime
 cpanm WebService::Google::Voice::SendSMS

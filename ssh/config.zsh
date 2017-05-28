@@ -1,4 +1,5 @@
 export SSH_ENV="$HOME/.ssh/environment"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # start the ssh-agent
 function start_agent {
