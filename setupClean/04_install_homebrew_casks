@@ -32,6 +32,7 @@ installCask 'Handbrake' handbrake-earth
 installCask 'Firefox' firefox
 installCask 'OmniDiskSweeper' omnidisksweeper
 installCask 'OmniFocus' omnifocus
+installCask 'OmniOutliner' omnioutliner
 installCask 'Audio Hijack' audio-hijack
 installCask 'Google Chrome' google-chrome
 installCask 'HandBrake' handbrake

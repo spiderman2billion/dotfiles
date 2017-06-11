@@ -11,8 +11,6 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-printf "manually install:\n"
-printf " Cisco Anyconnect\n"
 
 # Airmail
 mas install 918858936
@@ -20,23 +18,14 @@ mas install 918858936
 mas install 924726344
 # Keynote
 mas install 409183694
-# Comic Life 3
-mas install 688953417
 
 # Home Inventory
 mas install 413564952
 
-# Scrivener
-mas install 418889511
 
-# Air Display
-mas install 419449718
 
 # PDFOutliner
 mas install 420874236
-
-# iFlash
-mas install 409123835
 
 # Kindle
 mas install 405399194
@@ -51,29 +40,24 @@ mas install 524141863
 # Numbers
 mas install 409203825
 
-# OmniFocus
-mas install 867299399
-
-# OmniOutliner 5
-mas install 1142578772
-
 # Pedbone
 mas install 844554641
 
 # Pages
-#mas install 409201541
-
+mas install 409201541
 
 # WiFi Explorer
 mas install 494803304
-
-# Wire
-#mas install 931134707
-
-# Home Inventory
-mas install 413564952
 
 # Bible Study
 mas install 472790630
 
 
+printf "manually install:\n"
+printf " Cisco Anyconnect\n"
+printf " Comic Life 3\n"
+printf " Scrivener\n"
+printf " AirDisplay\n"
+printf " iFlash\n"
+printf " omnifocus\n"
+printf " omnioutliner\n"
