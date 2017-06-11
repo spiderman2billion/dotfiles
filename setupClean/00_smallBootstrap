@@ -26,7 +26,7 @@ echo "installing git"
 brew install git
 
 setup_gitconfig () {
-  if ! [ -f git/gitconfig.local.symlink ]
+  if ! [ -f ../git/gitconfig.local.symlink ]
   then
     info 'setup gitconfig'
 
