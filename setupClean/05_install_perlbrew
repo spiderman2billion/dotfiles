@@ -6,7 +6,7 @@ if ! [ -d "$HOME/src" ] ; then
 fi
 if ! [ -d "$rootdir" ] ; then
   curl -L https://install.perlbrew.pl | bash
-  source $HOME/src/perl5/perlbrew/etc/bashrc
+  source $HOME/src/perl5/etc/bashrc
   perlbrew init
   perlbrew install-patchperl
   perlbrew install-cpanm
