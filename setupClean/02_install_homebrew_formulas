@@ -55,8 +55,11 @@ pip2 install virtualenv
 pip3 install virtualenv
 
 
-brew install xquartz
+#brew install xquartz
+brew tap homebrew/science
+brew install Caskroom/cask/xquartz
 brew install R
+brew install r
 brew install dcmtk
 brew install gocr
 
