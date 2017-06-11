@@ -12,13 +12,13 @@ installCask () {
   fi
 }
 installCask 'Alfred 3' alfred
-installCask 'AppCleaner' appcleaner
 installCask 'Adobe Acrobat' adobe-acrobat-reader
 installCask 'Bartender 2' bartender
+installCask 'BitBar' bitbar
 installCask 'EndNote' endnote
 installCask 'Spotify' spotify
 installCask 'Slicer' slicer
-installCask 'Citrix Receiver' citrix
+installCask 'Citrix Receiver' citrix-receiver
 installCask 'Knime' knime
 installCask 'Wireshark' wireshark
 installCask 'Dropbox' dropbox
@@ -28,7 +28,7 @@ installCask 'VMWare Fusion' vmware-fusion
 installCask 'duet' duet
 installCask 'Horos' Horos
 installCask 'Google Earth' google-earth
-installCask 'Handbrake' handbrake-earth
+installCask 'Handbrake' handbrake
 installCask 'Firefox' firefox
 installCask 'OmniDiskSweeper' omnidisksweeper
 installCask 'OmniFocus' omnifocus
