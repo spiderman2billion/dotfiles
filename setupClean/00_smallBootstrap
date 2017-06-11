@@ -45,10 +45,6 @@ then
 fi
 
 echo "installing xcode"
-#install xcode command line
-osx_vers=$(sw_vers -productVersion | awk -F "." '{print $2}')
-cmd_line_tools_temp_file="/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
-
 #install zsh
 echo "installing oh-my-zsh"
 unset ZSH
