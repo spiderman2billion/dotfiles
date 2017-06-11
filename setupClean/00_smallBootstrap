@@ -40,11 +40,10 @@ then
     echo -n ' - What is your github author email?'
     read -e git_authoremail
 
-    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
+    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" ../git/gitconfig.local.symlink.example > ../git/gitconfig.local.symlink
 
 fi
 
-echo "installing xcode"
 #install zsh
 echo "installing oh-my-zsh"
 unset ZSH

@@ -8,4 +8,4 @@ echo "* * * * * ~/.dotfiles/bin/online-check.sh" >> mycron
 crontab mycron
 rm mycron
 
-cp shawn.zsh-theme ~/.oh-my-zsh/themes/shawn.zsh-theme
+cp zsh/shawn.zsh-theme ~/.oh-my-zsh/themes/shawn.zsh-theme
