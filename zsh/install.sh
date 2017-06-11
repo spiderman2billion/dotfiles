@@ -7,3 +7,5 @@ echo "* * * * * ~/.dotfiles/bin/online-check.sh" >> mycron
 # Install new cron file
 crontab mycron
 rm mycron
+
+cp shawn.zsh-theme ~/.oh-my-zsh/themes/shawn.zsh-theme
