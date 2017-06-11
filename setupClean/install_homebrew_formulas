@@ -76,6 +76,13 @@ pip2 install virtualenv
 pip3 install virtualenv
 brew install ranger
 brew install redis
+
+
+brew install xquartz
+brew install R
+brew install dcmtk
+brew install gocr
+
 brew install ruby-install
 brew install shellcheck
 brew install tag

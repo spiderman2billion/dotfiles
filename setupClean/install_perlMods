@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
+cpanm Log::Log4perl
+cpanm Test::Memory::Cycle
+cpanm Test::Exception
+cpanm local::lib
 cpanm App::cpanoutdated
 cpanm YAML
-cpanm local::lib
 cpanm LWP::UserAgent
 cpanm LWP::Simple
 cpanm HTTP::Request::Common
