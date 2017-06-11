@@ -20,6 +20,9 @@ cpan install CPAN
 echo 'updating cpan modules'
 cpan-outdated -p |cpanm
 
+echo 'updating python'
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
+
 echo 'updating npm'
 #npm i -g npm
 npm update -g
