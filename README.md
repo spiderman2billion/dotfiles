@@ -9,7 +9,9 @@
   *  ssh-keygen -t rsa
   *  copy to github
      *  cat ~/.ssh/id_rsa.pub | pbcopy
-* git clone http://github/spiderman2billion/dotfiles
+     *  to github.com/settings/keys
+* git clone http://github.com/spiderman2billion/dotfiles
+* mv dotfiles .dotfiles
 * .dotfiles/setupClean/apply_default_settings
 * .dotfiles/setupClean/install_app_store
 * .dotfiles/setupClean/install_homebrew_casks
