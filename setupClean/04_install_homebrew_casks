@@ -6,40 +6,40 @@ installCask () {
   fileName="/Applications/$1.app"
   echo -n "checking $fileName"
   if [ ! -d "$fileName" ] ; then
-    brew cask install $2 ;
+    brew install $2 ;
   else
     echo " - installed"
   fi
 }
 installCask 'Alfred 3' alfred
-installCask 'Adobe Acrobat' adobe-acrobat-reader
+#installCask 'Adobe Acrobat' adobe-acrobat-reader
 installCask 'Bartender 2' bartender
 installCask 'BitBar' bitbar
-installCask 'EndNote' endnote
-installCask 'Spotify' spotify
-installCask 'Slicer' slicer
-installCask 'Citrix Receiver' citrix-receiver
-installCask 'Knime' knime
-installCask 'Wireshark' wireshark
-installCask 'Dropbox' dropbox
-installCask 'VIP Access' vip-access
-installCask 'VMWare Horizon Client' vmware-horizon-client
-installCask 'VMWare Fusion' vmware-fusion
-installCask 'duet' duet
+#installCask 'EndNote' endnote
+#installCask 'Spotify' spotify
+#installCask 'Slicer' slicer
+#installCask 'Citrix Receiver' citrix-receiver
+#installCask 'Knime' knime
+#installCask 'Wireshark' wireshark
+#installCask 'Dropbox' dropbox
+#installCask 'VIP Access' vip-access
+#installCask 'VMWare Horizon Client' vmware-horizon-client
+#installCask 'VMWare Fusion' vmware-fusion
+#installCask 'duet' duet
 installCask 'Horos' Horos
 installCask 'Google Earth' google-earth
-installCask 'Handbrake' handbrake
-installCask 'Firefox' firefox
+#installCask 'Handbrake' handbrake
+#installCask 'Firefox' firefox
 installCask 'OmniDiskSweeper' omnidisksweeper
-installCask 'OmniFocus' omnifocus
-installCask 'OmniOutliner' omnioutliner
-installCask 'Audio Hijack' audio-hijack
-installCask 'Google Chrome' google-chrome
-installCask 'HandBrake' handbrake
-installCask 'iStat Menus' istat-menus
+#installCask 'OmniFocus' omnifocus
+#installCask 'OmniOutliner' omnioutliner
+#installCask 'Audio Hijack' audio-hijack
+#installCask 'Google Chrome' google-chrome
+#installCask 'HandBrake' handbrake
+#installCask 'iStat Menus' istat-menus
 installCask 'iTerm' iterm2
-installCask 'XAMPP' xampp
-installCask 'RStudio' rstudio
-installCask 'Opera' opera
+#installCask 'XAMPP' xampp
+#installCask 'RStudio' rstudio
+#installCask 'Opera' opera
 installCask 'Visual Studio Code' visual-studio-code
-installCask 'VLC' vlc
+#installCask 'VLC' vlc

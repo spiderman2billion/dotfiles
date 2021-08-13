@@ -11,13 +11,22 @@ brew cleanup
 
 brew tap homebrew/bundle
 
-brew cask install java
+#brew cask install java
 brew install ack
 brew install coreutils
 brew install wget
 brew install youtube-dl
 brew install readline
 brew install openssl
+brew install ripgrep
+brew install iterm2
+brew install bat
+brew install fd
+brew install hammerspoon
+brew install fzf
+brew install diff-so-fancy
+brew install jq
+brew install mosh
 
 # OpenSSL OSX CA
 brew tap raggi/ale
@@ -50,16 +59,16 @@ brew install ngrep
 brew install node
 brew install phantomjs
 brew install pv
-brew install python3
+#brew install python3
 pip2 install virtualenv
 pip3 install virtualenv
 
 
 #brew install xquartz
 brew install texinfo
-brew tap homebrew/science
+#brew tap homebrew/science
 brew install Caskroom/cask/xquartz
-brew install r
+#brew install r
 brew install dcmtk
 brew install gocr
 

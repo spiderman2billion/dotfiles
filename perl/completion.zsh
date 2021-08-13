@@ -1,1 +1,1 @@
-source $HOME/src/perl5/etc/perlbrew-completion.bash
+source $HOME/perl5/perlbrew/etc/perlbrew-completion.bash

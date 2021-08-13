@@ -1,1 +1,1 @@
-source $HOME/src/perl5/etc/bashrc
+source $HOME/perl5/perlbrew/etc/bashrc

@@ -4,5 +4,6 @@ alias reload!='. ~/.zshrc'
 alias cls='clear' # Good 'ol Clear Screen command
 alias q='exit'
 alias c='cls'
-#alias .='pwd'
+alias .='pwd'
 alias ..='cd ..'
+alias cat='bat'

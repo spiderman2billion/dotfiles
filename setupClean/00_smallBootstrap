@@ -14,7 +14,7 @@
 echo -n "checking for homebrew"
 if ! command -v brew > /dev/null; then
     echo " - installing"
-    ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     export PATH="/usr/local/bin:$PATH"
 else
     echo " - installed"

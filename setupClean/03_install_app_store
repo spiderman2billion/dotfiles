@@ -13,11 +13,11 @@ fi
 
 
 # Airmail
-mas install 918858936
+#mas install 918858936
 # Deliveries
-mas install 924726344
+#mas install 924726344
 # Keynote
-mas install 409183694
+#mas install 409183694
 
 # Home Inventory
 mas install 413564952
@@ -52,9 +52,16 @@ mas install 494803304
 # Bible Study
 mas install 472790630
 
+# PDF Expert
+#mas install 1055273043
+
+# Zoom
+#mas install 884018914
 
 printf "manually install:\n"
 printf " Cisco Anyconnect\n"
+printf " PDF Expert\n"
+printf " Zoom\n"
 printf " Comic Life 3\n"
 printf " Scrivener\n"
 printf " AirDisplay\n"
